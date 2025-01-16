@@ -1,4 +1,6 @@
-import * as THREE from "https://cdn.skypack.dev/three@0.172.0/build/three.module.js";
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 //Create a Three.JS Scene
 const scene = new THREE.Scene();

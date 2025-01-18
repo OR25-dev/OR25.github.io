@@ -25,7 +25,7 @@ const loader = new GLTFLoader();
 
 //Load the file
 loader.load(
-  `./../glb/Donut.glb`,
+  `./src/glb/Donut.glb`,
   function (gltf) {
     //If the file is loaded, add it to the scene
     object = gltf.scene;

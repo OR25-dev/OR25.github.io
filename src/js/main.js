@@ -25,7 +25,7 @@ const loader = new GLTFLoader();
 
 //Load the file
 loader.load(
-  `./src/glb/Donut.glb`,
+  `./glb/Donut.glb`,
   function (gltf) {
     //If the file is loaded, add it to the scene
     object = gltf.scene;
@@ -49,7 +49,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.getElementById("donut").appendChild(renderer.domElement);
 
 //Set how far the camera will be from the 3D model
-camera.position.z = objToRender === "dino" ? 25 : 500;
+camera.position.z = objToRender === "donut" ? 25 : 500;
 
 //Add lights to the scene, so we can actually see the 3D model
 const topLight = new THREE.DirectionalLight(0xffffff, 2); // Intensität erhöhen
@@ -61,7 +61,7 @@ const ambientLight = new THREE.AmbientLight(0xFFFFFF, 2); // Intensität erhöhe
 scene.add(ambientLight);
 
 //This adds controls to the camera, so we can rotate / zoom it with the mouse
-if (objToRender === "dino") {
+if (objToRender === "donut") {
   controls = new OrbitControls(camera, renderer.domElement);
 }
 

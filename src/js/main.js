@@ -1,6 +1,6 @@
-import * as THREE from 'three';
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import * as THREE from '/src/js/three.module.js';
+import { OrbitControls } from '/src/js/jsm/controls/OrbitControls.js';
+import { GLTFLoader } from '/src/js/jsm/loaders/GLTFLoader.js';
 
 // Szene, Kamera und Renderer initialisieren
 const scene = new THREE.Scene();
